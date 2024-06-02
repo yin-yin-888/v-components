@@ -22,21 +22,18 @@
 </template>
 
 <script setup lang="ts">
- import type { ButtonProps } from './types'
- import {ref} from 'vue'
- withDefaults(defineProps<ButtonProps>(),{nativeType:'button'})
+import type { ButtonProps } from './types'
+import { ref } from 'vue'
+withDefaults(defineProps<ButtonProps>(), { nativeType: 'button' })
 defineOptions({
-    name:'VKbutton'
-  })
+  name: 'vkbutton'
+})
 const _ref = ref<HTMLButtonElement>()
-  defineExpose({
-    ref:_ref
-  })
-  // import {buttonProps} from './types'
-  // defineProps(buttonProps)
+defineExpose({
+  ref: _ref
+})
+// import {buttonProps} from './types'
+// defineProps(buttonProps)
 </script>
 
-<style>
-
-</style>
-
+<style></style>
